@@ -20,8 +20,8 @@ variable "default_tags" {
   description = "This is a variable to manage ec2 tags"
   type        = map(any)
   default = {
-    "Name" = "Dev Application node"
-    "Dept" = "development"
+    "Name"        = "Dev Application node"
+    "Dept"        = "development"
     "Can destroy" = "Yes"
   }
 }
