@@ -6,7 +6,7 @@ terraform {
     }
   }
   backend "s3" {
-    bucket = "simidevops-terraform-state-files"
+    bucket = "dev.somerandomname"
     key    = "dev/terraform.tfstate"
     region = "eu-west-1"
   }

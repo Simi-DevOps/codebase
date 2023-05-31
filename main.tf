@@ -5,7 +5,7 @@ resource "aws_instance" "ec2_AmazonLinux" {
   key_name      = var.ec2_key_name
 
   security_groups   = [aws_security_group.ec2_sg.name]
-  availability_zone = "eu-west-1a"
+  availability_zone = "eu-west-1b"
   user_data         = <<EOF
 #!/bin/bash
 yum install java-1.8.0-amazon-corretto-devel.x86_64 maven git -y
