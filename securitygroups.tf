@@ -14,8 +14,8 @@ resource "aws_security_group" "ec2_sg" {
 
   ingress {
     description = "HTTP from VPC"
-    from_port   = 8080
-    to_port     = 8080
+    from_port   = 80
+    to_port     = 80
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
 
@@ -29,7 +29,7 @@ resource "aws_security_group" "ec2_sg" {
   }
 
   tags = {
-    Name = "allow_http_ssh"
+    Name = "SIT EC2 Security group"
   }
 }
 
