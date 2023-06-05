@@ -1,6 +1,6 @@
 
 resource "aws_security_group" "ec2_sg" {
-  name        = "allow_http_SSH"
+  name        = "SIT EC2 Security group"
   description = "allow HTTP and SSH inb traffic"
   vpc_id      = "vpc-0bb955ba49115e69b"
 
